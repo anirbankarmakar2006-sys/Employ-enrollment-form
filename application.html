@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Application Form | Nexora Technologies Pvt. Ltd.</title>
+
+    <meta name="description"
+          content="Employee Application Form - Nexora Technologies Pvt. Ltd.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="main-header">
+
+    <div class="container header-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <div>
+
+                <h2>Nexora Technologies</h2>
+
+                <span>Employee Enrollment Portal</span>
+
+            </div>
+
+        </a>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Employee Portal</a>
+                </li>
+
+                <li>
+                    <a href="admin-login.html">Admin</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     PAGE BANNER
+========================================== -->
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>Employee Application Form</h1>
+
+        <p>
+
+            Complete all sections carefully. Fields marked with (*)
+            are mandatory.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     APPLICATION FORM
+========================================== -->
+
+<section class="application-section">
+
+    <div class="container">
+
+        <div class="application-wrapper">
+
+            <div class="application-header">
+
+                <h2>
+
+                    Employee Application
+
+                </h2>
+
+                <p>
+
+                    Please provide accurate information.
+                    Your application can be edited until
+                    final submission.
+
+                </p>
+
+            </div>
+
+
+
+            <form id="applicationForm"
+                  autocomplete="off">
+
+<!-- ==========================================
+     PERSONAL INFORMATION
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-user"></i>
+
+        <h3>Personal Information</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="employeeId">
+
+                Employee ID
+
+            </label>
+
+            <input
+                type="text"
+                id="employeeId"
+                name="employeeId"
+                readonly>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="applicationId">
+
+                Application ID
+
+            </label>
+
+            <input
+                type="text"
+                id="applicationId"
+                name="applicationId"
+                readonly>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="firstName">
+
+                First Name *
+
+            </label>
+
+            <input
+                type="text"
+                id="firstName"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="lastName">
+
+                Last Name *
+
+            </label>
+
+            <input
+                type="text"
+                id="lastName"
+                required>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="gender">
+
+                Gender *
+
+            </label>
+
+            <select
+                id="gender"
+                required>
+
+                <option value="">Select Gender</option>
+
+                <option>Male</option>
+
+                <option>Female</option>
+
+                <option>Other</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="dob">
+
+                Date of Birth *
+
+            </label>
+
+            <input
+                type="date"
+                id="dob"
+                required>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="maritalStatus">
+
+                Marital Status
+
+            </label>
+
+            <select id="maritalStatus">
+
+                <option value="">Select</option>
+
+                <option>Single</option>
+
+                <option>Married</option>
+
+                <option>Divorced</option>
+
+                <option>Widowed</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="bloodGroup">
+
+                Blood Group
+
+            </label>
+
+            <select id="bloodGroup">
+
+                <option value="">Select</option>
+
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="fatherName">
+
+                Father's Name *
+
+            </label>
+
+            <input
+                type="text"
+                id="fatherName"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="motherName">
+
+                Mother's Name *
+
+            </label>
+
+            <input
+                type="text"
+                id="motherName"
+                required>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="email">
+
+                Email Address *
+
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="mobile">
+
+                Mobile Number *
+
+            </label>
+
+            <input
+                type="tel"
+                id="mobile"
+                maxlength="10"
+                required>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     ADDRESS SECTION
+     (Continues in Part 2)
+========================================== -->
+
+<!-- ==========================================
+     ADDRESS INFORMATION
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h3>Address Information</h3>
+
+    </div>
+
+    <h4 class="sub-section-title">Current Address</h4>
+
+    <div class="form-group">
+
+        <label for="currentAddress">
+
+            Street Address *
+
+        </label>
+
+        <textarea
+            id="currentAddress"
+            name="currentAddress"
+            rows="3"
+            required></textarea>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="currentCity">
+
+                City *
+
+            </label>
+
+            <input
+                type="text"
+                id="currentCity"
+                name="currentCity"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="currentState">
+
+                State *
+
+            </label>
+
+            <input
+                type="text"
+                id="currentState"
+                name="currentState"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="currentCountry">
+
+                Country *
+
+            </label>
+
+            <input
+                type="text"
+                id="currentCountry"
+                name="currentCountry"
+                value="India"
+                readonly>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="currentPincode">
+
+                PIN Code *
+
+            </label>
+
+            <input
+                type="text"
+                id="currentPincode"
+                name="currentPincode"
+                maxlength="6"
+                required>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="checkbox-group">
+
+        <label>
+
+            <input
+                type="checkbox"
+                id="sameAddress">
+
+            Permanent Address is the same as Current Address
+
+        </label>
+
+    </div>
+
+    <h4 class="sub-section-title">Permanent Address</h4>
+
+    <div class="form-group">
+
+        <label for="permanentAddress">
+
+            Street Address *
+
+        </label>
+
+        <textarea
+            id="permanentAddress"
+            name="permanentAddress"
+            rows="3"
+            required></textarea>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="permanentCity">
+
+                City *
+
+            </label>
+
+            <input
+                type="text"
+                id="permanentCity"
+                name="permanentCity"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="permanentState">
+
+                State *
+
+            </label>
+
+            <input
+                type="text"
+                id="permanentState"
+                name="permanentState"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="permanentCountry">
+
+                Country *
+
+            </label>
+
+            <input
+                type="text"
+                id="permanentCountry"
+                name="permanentCountry"
+                value="India"
+                readonly>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="permanentPincode">
+
+                PIN Code *
+
+            </label>
+
+            <input
+                type="text"
+                id="permanentPincode"
+                name="permanentPincode"
+                maxlength="6"
+                required>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     FAMILY INFORMATION
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-people-roof"></i>
+
+        <h3>Family Information</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="spouseName">
+
+                Spouse Name
+
+            </label>
+
+            <input
+                type="text"
+                id="spouseName"
+                name="spouseName">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="guardianName">
+
+                Guardian Name
+
+            </label>
+
+            <input
+                type="text"
+                id="guardianName"
+                name="guardianName">
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="guardianRelation">
+
+                Guardian Relationship
+
+            </label>
+
+            <input
+                type="text"
+                id="guardianRelation"
+                name="guardianRelation">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="familyMembers">
+
+                Number of Family Members
+
+            </label>
+
+            <input
+                type="number"
+                id="familyMembers"
+                name="familyMembers"
+                min="1"
+                max="20">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     EMERGENCY CONTACT
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-truck-medical"></i>
+
+        <h3>Emergency Contact</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="emergencyName">
+
+                Contact Person *
+
+            </label>
+
+            <input
+                type="text"
+                id="emergencyName"
+                name="emergencyName"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="emergencyRelation">
+
+                Relationship *
+
+            </label>
+
+            <input
+                type="text"
+                id="emergencyRelation"
+                name="emergencyRelation"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="emergencyPhone">
+
+                Mobile Number *
+
+            </label>
+
+            <input
+                type="tel"
+                id="emergencyPhone"
+                name="emergencyPhone"
+                maxlength="10"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="emergencyEmail">
+
+                Email Address
+
+            </label>
+
+            <input
+                type="email"
+                id="emergencyEmail"
+                name="emergencyEmail">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     EDUCATIONAL QUALIFICATIONS
+     (Continues in Part 3)
+========================================== -->
+
+<!-- ==========================================
+     EDUCATIONAL QUALIFICATIONS
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-user-graduate"></i>
+
+        <h3>Educational Qualifications</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="highestQualification">
+
+                Highest Qualification *
+
+            </label>
+
+            <select
+                id="highestQualification"
+                name="highestQualification"
+                required>
+
+                <option value="">Select Qualification</option>
+                <option>10th</option>
+                <option>12th</option>
+                <option>Diploma</option>
+                <option>BCA</option>
+                <option>B.Sc</option>
+                <option>B.Tech</option>
+                <option>B.Com</option>
+                <option>BA</option>
+                <option>MCA</option>
+                <option>M.Tech</option>
+                <option>MBA</option>
+                <option>Other</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="specialization">
+
+                Specialization
+
+            </label>
+
+            <input
+                type="text"
+                id="specialization"
+                name="specialization"
+                placeholder="Enter specialization">
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="university">
+
+                University / Board *
+
+            </label>
+
+            <input
+                type="text"
+                id="university"
+                name="university"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="college">
+
+                College / Institute *
+
+            </label>
+
+            <input
+                type="text"
+                id="college"
+                name="college"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="passingYear">
+
+                Passing Year *
+
+            </label>
+
+            <input
+                type="number"
+                id="passingYear"
+                name="passingYear"
+                min="1980"
+                max="2100"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="percentage">
+
+                Percentage / CGPA *
+
+            </label>
+
+            <input
+                type="text"
+                id="percentage"
+                name="percentage"
+                placeholder="Example: 82% or 8.75"
+                required>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     WORK EXPERIENCE
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        <h3>Work Experience</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="experience">
+
+                Total Experience
+
+            </label>
+
+            <select
+                id="experience"
+                name="experience">
+
+                <option value="">Select</option>
+                <option>Fresher</option>
+                <option>0 - 1 Year</option>
+                <option>1 - 3 Years</option>
+                <option>3 - 5 Years</option>
+                <option>5 - 10 Years</option>
+                <option>10+ Years</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="currentCompany">
+
+                Current Company
+
+            </label>
+
+            <input
+                type="text"
+                id="currentCompany"
+                name="currentCompany"
+                placeholder="Leave blank if Fresher">
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="designation">
+
+                Current Designation
+
+            </label>
+
+            <input
+                type="text"
+                id="designation"
+                name="designation">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="currentCTC">
+
+                Current CTC
+
+            </label>
+
+            <input
+                type="text"
+                id="currentCTC"
+                name="currentCTC"
+                placeholder="Example: ₹4.5 LPA">
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="experienceDescription">
+
+            Experience Summary
+
+        </label>
+
+        <textarea
+            id="experienceDescription"
+            name="experienceDescription"
+            rows="5"
+            placeholder="Describe your responsibilities, projects, achievements, and technical experience."></textarea>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     TECHNICAL SKILLS
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <h3>Technical Skills</h3>
+
+    </div>
+
+    <div class="checkbox-grid">
+
+        <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+
+        <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+
+        <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+
+        <label><input type="checkbox" name="skills" value="Bootstrap"> Bootstrap</label>
+
+        <label><input type="checkbox" name="skills" value="React"> React</label>
+
+        <label><input type="checkbox" name="skills" value="Angular"> Angular</label>
+
+        <label><input type="checkbox" name="skills" value="NodeJS"> Node.js</label>
+
+        <label><input type="checkbox" name="skills" value="ExpressJS"> Express.js</label>
+
+        <label><input type="checkbox" name="skills" value="Java"> Java</label>
+
+        <label><input type="checkbox" name="skills" value="Python"> Python</label>
+
+        <label><input type="checkbox" name="skills" value="C"> C</label>
+
+        <label><input type="checkbox" name="skills" value="C++"> C++</label>
+
+        <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
+
+        <label><input type="checkbox" name="skills" value="SQL"> SQL</label>
+
+        <label><input type="checkbox" name="skills" value="MongoDB"> MongoDB</label>
+
+        <label><input type="checkbox" name="skills" value="Git"> Git</label>
+
+        <label><input type="checkbox" name="skills" value="AWS"> AWS</label>
+
+        <label><input type="checkbox" name="skills" value="Azure"> Microsoft Azure</label>
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="otherSkills">
+
+            Other Skills
+
+        </label>
+
+        <textarea
+            id="otherSkills"
+            name="otherSkills"
+            rows="4"
+            placeholder="Mention additional technical or professional skills..."></textarea>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     LANGUAGES KNOWN
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-language"></i>
+
+        <h3>Languages Known</h3>
+
+    </div>
+
+    <div class="checkbox-grid">
+
+        <label><input type="checkbox" name="languages" value="English"> English</label>
+
+        <label><input type="checkbox" name="languages" value="Hindi"> Hindi</label>
+
+        <label><input type="checkbox" name="languages" value="Bengali"> Bengali</label>
+
+        <label><input type="checkbox" name="languages" value="Tamil"> Tamil</label>
+
+        <label><input type="checkbox" name="languages" value="Telugu"> Telugu</label>
+
+        <label><input type="checkbox" name="languages" value="Kannada"> Kannada</label>
+
+        <label><input type="checkbox" name="languages" value="Malayalam"> Malayalam</label>
+
+        <label><input type="checkbox" name="languages" value="Marathi"> Marathi</label>
+
+        <label><input type="checkbox" name="languages" value="Gujarati"> Gujarati</label>
+
+        <label><input type="checkbox" name="languages" value="Punjabi"> Punjabi</label>
+
+        <label><input type="checkbox" name="languages" value="Odia"> Odia</label>
+
+        <label><input type="checkbox" name="languages" value="Urdu"> Urdu</label>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     DOCUMENTS & BANK DETAILS
+     (Continues in Part 4)
+========================================== -->
+
+<!-- ==========================================
+     IDENTITY DOCUMENTS
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-id-card"></i>
+
+        <h3>Identity Documents</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="aadhaarNumber">
+
+                Aadhaar Number *
+
+            </label>
+
+            <input
+                type="text"
+                id="aadhaarNumber"
+                name="aadhaarNumber"
+                maxlength="12"
+                placeholder="Enter 12-digit Aadhaar Number"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="panNumber">
+
+                PAN Number *
+
+            </label>
+
+            <input
+                type="text"
+                id="panNumber"
+                name="panNumber"
+                maxlength="10"
+                placeholder="ABCDE1234F"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="passportNumber">
+
+                Passport Number
+
+            </label>
+
+            <input
+                type="text"
+                id="passportNumber"
+                name="passportNumber">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="drivingLicense">
+
+                Driving License Number
+
+            </label>
+
+            <input
+                type="text"
+                id="drivingLicense"
+                name="drivingLicense">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     BANK DETAILS
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-building-columns"></i>
+
+        <h3>Bank Details</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="accountHolder">
+
+                Account Holder Name *
+
+            </label>
+
+            <input
+                type="text"
+                id="accountHolder"
+                name="accountHolder"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="bankName">
+
+                Bank Name *
+
+            </label>
+
+            <input
+                type="text"
+                id="bankName"
+                name="bankName"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="accountNumber">
+
+                Account Number *
+
+            </label>
+
+            <input
+                type="text"
+                id="accountNumber"
+                name="accountNumber"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="ifscCode">
+
+                IFSC Code *
+
+            </label>
+
+            <input
+                type="text"
+                id="ifscCode"
+                name="ifscCode"
+                placeholder="SBIN0001234"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="branchName">
+
+            Branch Name
+
+        </label>
+
+        <input
+            type="text"
+            id="branchName"
+            name="branchName">
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     JOB PREFERENCE
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        <h3>Job Preference</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="department">
+
+                Preferred Department *
+
+            </label>
+
+            <select
+                id="department"
+                name="department"
+                required>
+
+                <option value="">Select Department</option>
+                <option>Software Development</option>
+                <option>Web Development</option>
+                <option>Mobile Development</option>
+                <option>Cloud Computing</option>
+                <option>Artificial Intelligence</option>
+                <option>Cyber Security</option>
+                <option>Data Analytics</option>
+                <option>DevOps</option>
+                <option>Quality Assurance</option>
+                <option>Human Resources</option>
+                <option>Finance</option>
+                <option>Marketing</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="joiningDate">
+
+                Available Joining Date *
+
+            </label>
+
+            <input
+                type="date"
+                id="joiningDate"
+                name="joiningDate"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="employmentType">
+
+                Employment Type *
+
+            </label>
+
+            <select
+                id="employmentType"
+                name="employmentType"
+                required>
+
+                <option value="">Select</option>
+                <option>Full Time</option>
+                <option>Part Time</option>
+                <option>Internship</option>
+                <option>Contract</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="expectedSalary">
+
+                Expected Salary (₹)
+
+            </label>
+
+            <input
+                type="number"
+                id="expectedSalary"
+                name="expectedSalary"
+                min="0"
+                placeholder="Expected Annual Salary">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     DOCUMENT UPLOADS
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        <h3>Document Uploads</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="profilePhoto">
+
+                Passport Size Photo *
+
+            </label>
+
+            <input
+                type="file"
+                id="profilePhoto"
+                name="profilePhoto"
+                accept=".jpg,.jpeg,.png"
+                required>
+
+            <small>Accepted: JPG, JPEG, PNG (Max 2 MB)</small>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="resumeFile">
+
+                Resume / CV *
+
+            </label>
+
+            <input
+                type="file"
+                id="resumeFile"
+                name="resumeFile"
+                accept=".pdf,.doc,.docx"
+                required>
+
+            <small>Accepted: PDF, DOC, DOCX (Max 5 MB)</small>
+
+        </div>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="aadhaarFile">
+
+                Aadhaar Card Copy
+
+            </label>
+
+            <input
+                type="file"
+                id="aadhaarFile"
+                name="aadhaarFile"
+                accept=".pdf,.jpg,.jpeg,.png">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="panFile">
+
+                PAN Card Copy
+
+            </label>
+
+            <input
+                type="file"
+                id="panFile"
+                name="panFile"
+                accept=".pdf,.jpg,.jpeg,.png">
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="certificateFiles">
+
+            Educational Certificates
+
+        </label>
+
+        <input
+            type="file"
+            id="certificateFiles"
+            name="certificateFiles"
+            multiple
+            accept=".pdf,.jpg,.jpeg,.png">
+
+        <small>You can upload multiple certificate files.</small>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     DECLARATION & SUBMISSION
+     (Continues in Part 5)
+========================================== -->
+
+<!-- ==========================================
+     DECLARATION
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-file-signature"></i>
+
+        <h3>Declaration</h3>
+
+    </div>
+
+    <div class="declaration-box">
+
+        <p>
+
+            I hereby declare that all the information provided in this
+            application form is true, complete, and accurate to the best of
+            my knowledge. I understand that any false information or
+            misrepresentation may result in rejection of my application or
+            termination of employment if discovered later.
+
+        </p>
+
+    </div>
+
+    <div class="checkbox-group">
+
+        <label>
+
+            <input
+                type="checkbox"
+                id="declarationAccepted"
+                name="declarationAccepted"
+                required>
+
+            I have read and agree to the above declaration and the company
+            policies.
+
+        </label>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     APPLICATION STATUS
+========================================== -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h3>Application Status</h3>
+
+    </div>
+
+    <div class="status-grid">
+
+        <div class="status-item">
+
+            <label>Current Status</label>
+
+            <input
+                type="text"
+                id="applicationStatus"
+                value="Draft"
+                readonly>
+
+        </div>
+
+        <div class="status-item">
+
+            <label>Submission Date</label>
+
+            <input
+                type="text"
+                id="submissionDate"
+                readonly>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     FORM ACTION BUTTONS
+========================================== -->
+
+<div class="form-actions application-actions">
+
+    <button
+        type="button"
+        id="saveDraftBtn"
+        class="btn secondary-btn">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+        Save Draft
+
+    </button>
+
+    <button
+        type="reset"
+        class="btn secondary-btn">
+
+        <i class="fa-solid fa-rotate-left"></i>
+
+        Reset Form
+
+    </button>
+
+    <button
+        type="submit"
+        id="submitApplicationBtn"
+        class="btn primary-btn">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Submit Application
+
+    </button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>Nexora Technologies</h3>
+
+                <p>
+
+                    Employee Enrollment & HR Management System
+                    designed to simplify recruitment, onboarding,
+                    and employee management.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Employee Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="admin-login.html">Admin Login</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact HR</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy; 2026 Nexora Technologies Pvt. Ltd.
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Employee Enrollment Portal | Version 1.0
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     LOADING OVERLAY
+========================================== -->
+
+<div
+    id="loadingOverlay"
+    class="loading-overlay"
+    style="display:none;">
+
+    <div class="loader"></div>
+
+    <p>
+
+        Processing your application...
+
+    </p>
+
+</div>
+
+
+
+<!-- ==========================================
+     TOAST NOTIFICATION
+========================================== -->
+
+<div
+    id="toastNotification"
+    class="toast-notification">
+
+    <span id="toastMessage">
+
+        Notification
+
+    </span>
+
+</div>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

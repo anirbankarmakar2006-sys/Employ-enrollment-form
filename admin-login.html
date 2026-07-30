@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | Nexora Technologies Pvt. Ltd.</title>
+
+    <meta name="description"
+          content="Secure Administrator Login Portal">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="main-header">
+
+    <div class="container header-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <div>
+
+                <h2>Nexora Technologies</h2>
+
+                <span>Employee Enrollment Portal</span>
+
+            </div>
+
+        </a>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="register.html">Employee Register</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Employee Login</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     PAGE BANNER
+========================================== -->
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>Administrator Login</h1>
+
+        <p>
+
+            Authorized administrators can securely access the
+            Employee Management Dashboard.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     ADMIN LOGIN SECTION
+========================================== -->
+
+<section class="login-section">
+
+    <div class="container">
+
+        <div class="login-wrapper">
+
+            <!-- ==================================
+                 SECURITY INFORMATION
+            =================================== -->
+
+            <div class="login-info">
+
+                <h2>
+
+                    Administrator Access
+
+                </h2>
+
+                <p>
+
+                    This portal is restricted to authorized HR,
+                    Recruitment, and System Administrators.
+
+                </p>
+
+                <ul class="feature-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        Secure Authentication
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        Encrypted Login
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-user-shield"></i>
+
+                        Multi-Factor Verification
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        Employee Dashboard Access
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- ==================================
+                 ADMIN LOGIN FORM
+            =================================== -->
+
+            <div class="form-container">
+
+                <h2>
+
+                    Admin Sign In
+
+                </h2>
+
+                <p>
+
+                    Login with your administrator credentials.
+
+                </p>
+
+                <form id="adminLoginForm"
+                      autocomplete="off">
+
+                    <!-- Username -->
+
+                    <div class="form-group">
+
+                        <label for="adminUsername">
+
+                            Username / Email
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="adminUsername"
+                            name="adminUsername"
+                            placeholder="Enter Admin Username or Email"
+                            required>
+
+                        <small
+                            id="adminUsernameMessage"
+                            class="input-message"></small>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="adminPassword">
+
+                            Password
+
+                        </label>
+
+                        <div class="password-input">
+
+                            <input
+                                type="password"
+                                id="adminPassword"
+                                name="adminPassword"
+                                placeholder="Enter Password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleAdminPassword">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Remember Me -->
+
+                    <div class="login-options">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberAdmin">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#"
+                           id="adminForgotPassword">
+
+                            Forgot Password?
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- CAPTCHA -->
+
+                    <h3 class="form-section-title">
+
+                        Security Verification
+
+                    </h3>
+
+                    <div class="captcha-wrapper">
+
+                        <div
+                            class="captcha-display"
+                            id="adminCaptcha">
+
+                            ABC123
+
+                        </div>
+
+                        <button
+                            type="button"
+                            id="refreshAdminCaptcha"
+                            class="refresh-captcha">
+
+                            <i class="fa-solid fa-rotate-right"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="adminCaptchaInput">
+
+                            Enter CAPTCHA
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="adminCaptchaInput"
+                            placeholder="Enter CAPTCHA"
+                            required>
+
+                    </div>
+
+                    <!-- Continues in Part 2 -->
+
+                                        <!-- ==========================================
+                         OTP VERIFICATION
+                    ========================================== -->
+
+                    <h3 class="form-section-title">
+
+                        Administrator OTP Verification
+
+                    </h3>
+
+                    <div class="otp-box">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="adminOtp">
+
+                                    One-Time Password (OTP)
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="adminOtp"
+                                    name="adminOtp"
+                                    maxlength="6"
+                                    placeholder="Enter 6-digit OTP">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>&nbsp;</label>
+
+                                <button
+                                    type="button"
+                                    id="sendAdminOtp"
+                                    class="btn secondary-btn">
+
+                                    Send OTP
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         LOGIN BUTTONS
+                    ========================================== -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            id="adminLoginBtn"
+                            class="btn primary-btn">
+
+                            <i class="fa-solid fa-user-shield"></i>
+
+                            Login to Dashboard
+
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn secondary-btn">
+
+                            <i class="fa-solid fa-rotate-left"></i>
+
+                            Reset
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div class="form-footer">
+
+                    <p>
+
+                        Return to
+
+                        <a href="index.html">
+
+                            Home Page
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     ADMIN NOTICE
+========================================== -->
+
+<section class="benefits-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Administrative Access</span>
+
+            <h2>Authorized Personnel Only</h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-users-gear"></i>
+
+                <h3>Employee Management</h3>
+
+                <p>
+
+                    View, search, edit and manage employee
+                    registration and application records.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-file-circle-check"></i>
+
+                <h3>Application Review</h3>
+
+                <p>
+
+                    Review submitted applications,
+                    approve, reject or keep them pending.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <h3>Reports & Analytics</h3>
+
+                <p>
+
+                    Monitor registrations,
+                    recruitment progress and dashboard statistics.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>Secure Administration</h3>
+
+                <p>
+
+                    Multi-layer authentication with
+                    CAPTCHA and OTP verification.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>Nexora Technologies</h3>
+
+                <p>
+
+                    Employee Enrollment &
+                    HR Management System.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Employee Login</a></li>
+                    <li><a href="application.html">Application</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact HR</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy; 2026 Nexora Technologies Pvt. Ltd.
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Administrator Portal | Version 1.0
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     LOADING OVERLAY
+========================================== -->
+
+<div
+    id="loadingOverlay"
+    class="loading-overlay"
+    style="display:none;">
+
+    <div class="loader"></div>
+
+    <p>
+
+        Authenticating administrator...
+
+    </p>
+
+</div>
+
+
+
+<!-- ==========================================
+     TOAST NOTIFICATION
+========================================== -->
+
+<div
+    id="toastNotification"
+    class="toast-notification">
+
+    <span id="toastMessage">
+
+        Notification
+
+    </span>
+
+</div>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

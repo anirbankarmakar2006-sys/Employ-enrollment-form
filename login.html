@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Login | Nexora Technologies Pvt. Ltd.</title>
+
+    <meta name="description"
+          content="Secure Employee Login Portal - Nexora Technologies Pvt. Ltd.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="main-header">
+
+    <div class="container header-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <div>
+
+                <h2>Nexora Technologies</h2>
+
+                <span>Employee Enrollment Portal</span>
+
+            </div>
+
+        </a>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="register.html">
+                        Register
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin-login.html">
+                        Admin Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     PAGE BANNER
+========================================== -->
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>Employee Login</h1>
+
+        <p>
+
+            Login securely to access your Employee Dashboard
+            and Application Portal.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     LOGIN SECTION
+========================================== -->
+
+<section class="login-section">
+
+    <div class="container">
+
+        <div class="login-wrapper">
+
+            <!-- ==================================
+                 LEFT INFORMATION PANEL
+            =================================== -->
+
+            <div class="login-info">
+
+                <h2>Welcome Back!</h2>
+
+                <p>
+
+                    Login using your registered email address
+                    or mobile number to continue.
+
+                </p>
+
+                <ul class="feature-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Secure Authentication
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        OTP Verification
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Track Application Status
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Employee Dashboard Access
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- ==================================
+                 LOGIN FORM
+            =================================== -->
+
+            <div class="form-container">
+
+                <h2>Employee Sign In</h2>
+
+                <p>
+
+                    Enter your login credentials.
+
+                </p>
+
+                <form id="loginForm"
+                      autocomplete="off">
+
+                    <!-- Email / Mobile -->
+
+                    <div class="form-group">
+
+                        <label for="loginId">
+
+                            Email Address / Mobile Number
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="loginId"
+                            name="loginId"
+                            placeholder="Enter registered email or mobile number"
+                            required>
+
+                        <small id="loginIdMessage"
+                               class="input-message"></small>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="loginPassword">
+
+                            Password
+
+                        </label>
+
+                        <div class="password-input">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="loginPassword"
+                                placeholder="Enter your password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="togglePassword">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Remember Me -->
+
+                    <div class="login-options">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#"
+                           id="forgotPasswordLink">
+
+                            Forgot Password?
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- CAPTCHA -->
+
+                    <h3 class="form-section-title">
+
+                        Security Verification
+
+                    </h3>
+
+                    <div class="captcha-wrapper">
+
+                        <div class="captcha-display"
+                             id="loginCaptcha">
+
+                            ABC123
+
+                        </div>
+
+                        <button
+                            type="button"
+                            id="refreshLoginCaptcha"
+                            class="refresh-captcha"
+                            title="Refresh CAPTCHA">
+
+                            <i class="fa-solid fa-rotate-right"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="loginCaptchaInput">
+
+                            Enter CAPTCHA
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="loginCaptchaInput"
+                            placeholder="Type the CAPTCHA shown above"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- OTP Verification -->
+
+                    <h3 class="form-section-title">
+
+                        OTP Verification
+
+                    </h3>
+
+                    <div class="otp-box">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="loginOtp">
+
+                                    One-Time Password (OTP)
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="loginOtp"
+                                    maxlength="6"
+                                    placeholder="Enter 6-digit OTP">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>&nbsp;</label>
+
+                                <button
+                                    type="button"
+                                    id="sendLoginOtp"
+                                    class="btn secondary-btn">
+
+                                    Send OTP
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Continues in Part 2 -->
+
+                                        <!-- ==========================================
+                         LOGIN ACTIONS
+                    ========================================== -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            id="loginButton"
+                            class="btn primary-btn">
+
+                            <i class="fa-solid fa-right-to-bracket"></i>
+
+                            Login
+
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn secondary-btn">
+
+                            <i class="fa-solid fa-rotate-left"></i>
+
+                            Reset
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <!-- Register Link -->
+
+                <div class="form-footer">
+
+                    <p>
+
+                        Don't have an account?
+
+                        <a href="register.html">
+
+                            Register Here
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     LOGIN BENEFITS
+========================================== -->
+
+<section class="benefits-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Employee Portal</span>
+
+            <h2>After Login You Can</h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h3>Complete Application</h3>
+
+                <p>
+
+                    Fill out your employee application
+                    with all required information.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <h3>Track Application</h3>
+
+                <p>
+
+                    Check the current status of your
+                    recruitment process.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                <h3>Secure Account</h3>
+
+                <p>
+
+                    Multi-layer authentication with
+                    CAPTCHA and OTP verification.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>Auto Save</h3>
+
+                <p>
+
+                    Your application data is securely
+                    stored locally while completing the form.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>Nexora Technologies</h3>
+
+                <p>
+
+                    Employee Enrollment &
+                    HR Management Portal.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="register.html">Register</a></li>
+
+                    <li><a href="admin-login.html">Admin Login</a></li>
+
+                    <li><a href="index.html#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy; 2026 Nexora Technologies Pvt. Ltd.
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Employee Enrollment Portal | Version 1.0
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     LOADING OVERLAY
+========================================== -->
+
+<div
+    id="loadingOverlay"
+    class="loading-overlay"
+    style="display:none;">
+
+    <div class="loader"></div>
+
+    <p>
+
+        Authenticating your account...
+
+    </p>
+
+</div>
+
+
+
+<!-- ==========================================
+     TOAST NOTIFICATION
+========================================== -->
+
+<div
+    id="toastNotification"
+    class="toast-notification">
+
+    <span id="toastMessage">
+
+        Notification
+
+    </span>
+
+</div>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

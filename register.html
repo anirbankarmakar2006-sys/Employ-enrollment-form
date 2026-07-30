@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Registration | Nexora Technologies Pvt. Ltd.</title>
+
+    <meta name="description"
+          content="Employee Registration Portal - Nexora Technologies Pvt. Ltd.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="main-header">
+
+    <div class="container header-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <div>
+
+                <h2>Nexora Technologies</h2>
+
+                <span>Employee Enrollment Portal</span>
+
+            </div>
+
+        </a>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Employee Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin-login.html">
+                        Admin Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     PAGE TITLE
+========================================== -->
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>Employee Registration</h1>
+
+        <p>
+
+            Create your employee account to begin the
+            recruitment and onboarding process.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     REGISTRATION SECTION
+========================================== -->
+
+<section class="register-section">
+
+    <div class="container">
+
+        <div class="register-wrapper">
+
+            <!-- Left Side -->
+
+            <div class="register-info">
+
+                <h2>Welcome to Nexora</h2>
+
+                <p>
+
+                    Complete your registration to
+                    access the Employee Enrollment Portal.
+
+                </p>
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Secure Registration
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        OTP Verification
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Application Tracking
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        HR Dashboard Access
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Registration Form -->
+
+            <div class="form-container">
+
+                <h2>Create Account</h2>
+
+                <p>
+
+                    Fill in your personal details below.
+
+                </p>
+
+                <form id="registerForm"
+                      autocomplete="off">
+
+                    <!-- Personal Details -->
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+
+                                First Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Enter first name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+
+                                Last Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Enter last name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="gender">
+
+                                Gender
+
+                            </label>
+
+                            <select
+                                id="gender"
+                                name="gender"
+                                required>
+
+                                <option value="">
+                                    Select Gender
+                                </option>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="dob">
+
+                                Date of Birth
+
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="fatherName">
+
+                                Father's Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fatherName"
+                                name="fatherName"
+                                placeholder="Enter father's name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="motherName">
+
+                                Mother's Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="motherName"
+                                name="motherName"
+                                placeholder="Enter mother's name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="aadhaar">
+
+                            Aadhaar Number
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="aadhaar"
+                            name="aadhaar"
+                            maxlength="12"
+                            placeholder="Enter 12-digit Aadhaar Number"
+                            required>
+
+                    </div>
+
+                    <!-- Continues in Part 2 -->
+                                         <!-- ==========================================
+                         CONTACT INFORMATION
+                    ========================================== -->
+
+                    <h3 class="form-section-title">
+                        Contact Information
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required>
+
+                            <small class="input-message"
+                                   id="emailMessage"></small>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="mobile">
+                                Mobile Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                name="mobile"
+                                maxlength="10"
+                                placeholder="Enter 10-digit mobile number"
+                                required>
+
+                            <small class="input-message"
+                                   id="mobileMessage"></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         ADDRESS DETAILS
+                    ========================================== -->
+
+                    <h3 class="form-section-title">
+                        Address Details
+                    </h3>
+
+                    <div class="form-group">
+
+                        <label for="address">
+
+                            Street Address
+
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your complete address"
+                            required></textarea>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="city">
+
+                                City
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="state">
+
+                                State
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="state"
+                                name="state"
+                                placeholder="Enter state"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="country">
+
+                                Country
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="country"
+                                name="country"
+                                value="India"
+                                readonly>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+
+                                PIN Code
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                name="pincode"
+                                maxlength="6"
+                                placeholder="Enter PIN Code"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         ACCOUNT CREDENTIALS
+                    ========================================== -->
+
+                    <h3 class="form-section-title">
+
+                        Account Credentials
+
+                    </h3>
+
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="password">
+
+                                Password
+
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a strong password"
+                                required>
+
+                            <small class="password-strength"
+                                   id="passwordStrength"></small>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+
+                                Confirm Password
+
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                required>
+
+                            <small class="input-message"
+                                   id="confirmPasswordMessage"></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         OTP VERIFICATION
+                    ========================================== -->
+
+                    <h3 class="form-section-title">
+
+                        OTP Verification
+
+                    </h3>
+
+
+
+                    <div class="otp-box">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="emailOtp">
+
+                                    Email OTP
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="emailOtp"
+                                    maxlength="6"
+                                    placeholder="Enter Email OTP">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>&nbsp;</label>
+
+                                <button
+                                    type="button"
+                                    class="btn secondary-btn"
+                                    id="sendEmailOtp">
+
+                                    Send Email OTP
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="mobileOtp">
+
+                                    Mobile OTP
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="mobileOtp"
+                                    maxlength="6"
+                                    placeholder="Enter Mobile OTP">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>&nbsp;</label>
+
+                                <button
+                                    type="button"
+                                    class="btn secondary-btn"
+                                    id="sendMobileOtp">
+
+                                    Send Mobile OTP
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         CAPTCHA
+                    ========================================== -->
+
+                    <h3 class="form-section-title">
+
+                        Security Verification
+
+                    </h3>
+
+                    <div class="captcha-wrapper">
+
+                        <div class="captcha-display"
+                             id="registerCaptcha">
+
+                            ABC123
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="refresh-captcha"
+                            id="refreshRegisterCaptcha"
+                            title="Refresh CAPTCHA">
+
+                            <i class="fa-solid fa-rotate-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="captchaInput">
+
+                            Enter CAPTCHA
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="captchaInput"
+                            placeholder="Enter the CAPTCHA shown above"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Continues in Part 3 -->
+                                         <!-- ==========================================
+                         TERMS & CONDITIONS
+                    ========================================== -->
+
+                    <div class="form-group checkbox-group">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required>
+
+                            <span>
+                                I certify that all the information provided is
+                                true and accurate. I agree to the Terms &
+                                Conditions and Privacy Policy of Nexora
+                                Technologies Pvt. Ltd.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         FORM ACTIONS
+                    ========================================== -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="reset"
+                            class="btn secondary-btn">
+
+                            <i class="fa-solid fa-rotate-left"></i>
+                            Reset Form
+
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="btn primary-btn"
+                            id="registerBtn">
+
+                            <i class="fa-solid fa-user-plus"></i>
+                            Create Account
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <!-- Login Link -->
+
+                <div class="form-footer">
+
+                    <p>
+
+                        Already have an account?
+
+                        <a href="login.html">
+
+                            Employee Login
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     REGISTRATION BENEFITS
+========================================== -->
+
+<section class="benefits-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Employee Benefits</span>
+
+            <h2>Why Register with Nexora?</h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h3>Latest Technologies</h3>
+
+                <p>
+
+                    Work with AI, Cloud Computing,
+                    Cyber Security, Web Development,
+                    and Enterprise Applications.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>Professional Training</h3>
+
+                <p>
+
+                    Get access to internal certification
+                    programs and expert mentoring.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <h3>Career Growth</h3>
+
+                <p>
+
+                    Performance-based promotions,
+                    bonuses, and leadership opportunities.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <h3>Employee Wellbeing</h3>
+
+                <p>
+
+                    Health insurance, paid leave,
+                    wellness programs, and flexible work.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>Nexora Technologies</h3>
+
+                <p>
+
+                    Employee Enrollment &
+                    HR Management System
+                    for modern organizations.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="login.html">Employee Login</a></li>
+
+                    <li><a href="admin-login.html">Admin Login</a></li>
+
+                    <li><a href="index.html#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy; 2026 Nexora Technologies Pvt. Ltd.
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Version 1.0 | Employee Enrollment Portal
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     LOADING OVERLAY
+========================================== -->
+
+<div
+    class="loading-overlay"
+    id="loadingOverlay"
+    style="display:none;">
+
+    <div class="loader"></div>
+
+    <p>
+
+        Creating your account...
+
+    </p>
+
+</div>
+
+
+
+<!-- ==========================================
+     TOAST NOTIFICATION
+========================================== -->
+
+<div
+    class="toast-notification"
+    id="toastNotification">
+
+    <span id="toastMessage">
+
+        Notification
+
+    </span>
+
+</div>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

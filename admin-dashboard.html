@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Nexora Technologies Pvt. Ltd.</title>
+
+    <meta name="description"
+          content="Administrator Dashboard - Employee Enrollment & HR Management System">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===================================================
+     DASHBOARD HEADER
+=================================================== -->
+
+<header class="dashboard-header">
+
+    <div class="dashboard-header-left">
+
+        <button
+            id="sidebarToggle"
+            class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <a href="index.html"
+           class="dashboard-logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <div>
+
+                <h2>Nexora Technologies</h2>
+
+                <span>Administrator Dashboard</span>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="dashboard-header-right">
+
+        <div class="header-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="dashboardSearch"
+                placeholder="Search employee...">
+
+        </div>
+
+        <button class="header-icon">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span class="notification-count">
+
+                5
+
+            </span>
+
+        </button>
+
+        <button class="header-icon">
+
+            <i class="fa-regular fa-envelope"></i>
+
+        </button>
+
+        <div class="admin-profile">
+
+            <img
+                src="https://via.placeholder.com/45"
+                alt="Admin">
+
+            <div>
+
+                <h4>
+
+                    Administrator
+
+                </h4>
+
+                <span>
+
+                    HR Department
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ===================================================
+     MAIN DASHBOARD
+=================================================== -->
+
+<div class="dashboard-container">
+
+<!-- ===================================================
+     SIDEBAR
+=================================================== -->
+
+<aside
+    class="dashboard-sidebar"
+    id="dashboardSidebar">
+
+    <div class="sidebar-menu">
+
+        <h4>
+
+            MAIN MENU
+
+        </h4>
+
+        <ul>
+
+            <li class="active">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gauge-high"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#employees">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    Employees
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#applications">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    Applications
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#departments">
+
+                    <i class="fa-solid fa-building-user"></i>
+
+                    Departments
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#attendance">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    Attendance
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#reports">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    Reports
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#analytics">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Analytics
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="admin-login.html">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ===================================================
+     CONTENT AREA
+=================================================== -->
+
+<main class="dashboard-content">
+
+<!-- ===================================================
+     PAGE TITLE
+=================================================== -->
+
+<div class="page-title">
+
+    <div>
+
+        <h1>
+
+            Dashboard Overview
+
+        </h1>
+
+        <p>
+
+            Welcome back, Administrator.
+            Here is today's recruitment overview.
+
+        </p>
+
+    </div>
+
+    <button
+        class="btn primary-btn">
+
+        <i class="fa-solid fa-download"></i>
+
+        Export Report
+
+    </button>
+
+</div>
+
+
+
+<!-- ===================================================
+     DASHBOARD STATISTICS
+=================================================== -->
+
+<section class="stats-grid">
+
+    <div class="stat-card">
+
+        <div class="stat-icon blue">
+
+            <i class="fa-solid fa-users"></i>
+
+        </div>
+
+        <div>
+
+            <h2 id="totalEmployees">
+
+                248
+
+            </h2>
+
+            <p>
+
+                Total Employees
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon green">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+        </div>
+
+        <div>
+
+            <h2 id="newApplications">
+
+                37
+
+            </h2>
+
+            <p>
+
+                New Applications
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon orange">
+
+            <i class="fa-solid fa-clock"></i>
+
+        </div>
+
+        <div>
+
+            <h2 id="pendingReview">
+
+                14
+
+            </h2>
+
+            <p>
+
+                Pending Review
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon red">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <div>
+
+            <h2 id="approvedApplications">
+
+                186
+
+            </h2>
+
+            <p>
+
+                Approved
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================================
+     Continues in Part 2
+=========================================== -->
+<!-- ===================================================
+     QUICK ACTIONS
+=================================================== -->
+
+<section class="quick-actions-section">
+
+    <div class="section-header">
+
+        <h2>
+
+            Quick Actions
+
+        </h2>
+
+        <p>
+
+            Frequently used administrator operations.
+
+        </p>
+
+    </div>
+
+    <div class="quick-actions-grid">
+
+        <button class="action-card" id="addEmployeeBtn">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            <span>Add Employee</span>
+
+        </button>
+
+        <button class="action-card" id="viewApplicationsBtn">
+
+            <i class="fa-solid fa-file-circle-check"></i>
+
+            <span>Review Applications</span>
+
+        </button>
+
+        <button class="action-card" id="generateReportBtn">
+
+            <i class="fa-solid fa-file-arrow-down"></i>
+
+            <span>Generate Report</span>
+
+        </button>
+
+        <button class="action-card" id="sendNoticeBtn">
+
+            <i class="fa-solid fa-bullhorn"></i>
+
+            <span>Send Notice</span>
+
+        </button>
+
+        <button class="action-card" id="manageDepartmentsBtn">
+
+            <i class="fa-solid fa-building-user"></i>
+
+            <span>Departments</span>
+
+        </button>
+
+        <button class="action-card" id="systemSettingsBtn">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>System Settings</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     RECENT ACTIVITIES
+=================================================== -->
+
+<section class="dashboard-card">
+
+    <div class="card-header">
+
+        <h2>
+
+            Recent Activities
+
+        </h2>
+
+        <button class="btn secondary-btn">
+
+            View All
+
+        </button>
+
+    </div>
+
+    <div class="activity-list">
+
+        <div class="activity-item">
+
+            <div class="activity-icon success">
+
+                <i class="fa-solid fa-user-check"></i>
+
+            </div>
+
+            <div class="activity-content">
+
+                <h4>
+
+                    New employee approved
+
+                </h4>
+
+                <p>
+
+                    Rahul Sharma's application was approved by HR.
+
+                </p>
+
+            </div>
+
+            <span class="activity-time">
+
+                10 mins ago
+
+            </span>
+
+        </div>
+
+        <div class="activity-item">
+
+            <div class="activity-icon warning">
+
+                <i class="fa-solid fa-file-circle-question"></i>
+
+            </div>
+
+            <div class="activity-content">
+
+                <h4>
+
+                    Application pending review
+
+                </h4>
+
+                <p>
+
+                    Priya Das submitted a new employee application.
+
+                </p>
+
+            </div>
+
+            <span class="activity-time">
+
+                35 mins ago
+
+            </span>
+
+        </div>
+
+        <div class="activity-item">
+
+            <div class="activity-icon info">
+
+                <i class="fa-solid fa-envelope-open-text"></i>
+
+            </div>
+
+            <div class="activity-content">
+
+                <h4>
+
+                    Offer letter emailed
+
+                </h4>
+
+                <p>
+
+                    Appointment letter successfully delivered.
+
+                </p>
+
+            </div>
+
+            <span class="activity-time">
+
+                1 hour ago
+
+            </span>
+
+        </div>
+
+        <div class="activity-item">
+
+            <div class="activity-icon danger">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+            <div class="activity-content">
+
+                <h4>
+
+                    Document verification required
+
+                </h4>
+
+                <p>
+
+                    PAN verification failed for one applicant.
+
+                </p>
+
+            </div>
+
+            <span class="activity-time">
+
+                2 hours ago
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     RECRUITMENT SUMMARY
+=================================================== -->
+
+<section class="summary-grid">
+
+    <div class="summary-card">
+
+        <h3>
+
+            Today's Interviews
+
+        </h3>
+
+        <h1>
+
+            12
+
+        </h1>
+
+        <p>
+
+            Scheduled candidates
+
+        </p>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>
+
+            Open Positions
+
+        </h3>
+
+        <h1>
+
+            18
+
+        </h1>
+
+        <p>
+
+            Across all departments
+
+        </p>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>
+
+            Offers Released
+
+        </h3>
+
+        <h1>
+
+            8
+
+        </h1>
+
+        <p>
+
+            This week
+
+        </p>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>
+
+            Joining Today
+
+        </h3>
+
+        <h1>
+
+            5
+
+        </h1>
+
+        <p>
+
+            New employees
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     ANNOUNCEMENTS
+=================================================== -->
+
+<section class="dashboard-card">
+
+    <div class="card-header">
+
+        <h2>
+
+            HR Announcements
+
+        </h2>
+
+    </div>
+
+    <div class="announcement-list">
+
+        <div class="announcement-item">
+
+            <i class="fa-solid fa-bullhorn"></i>
+
+            <div>
+
+                <h4>
+
+                    Recruitment Drive
+
+                </h4>
+
+                <p>
+
+                    Campus hiring begins next Monday.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="announcement-item">
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            <div>
+
+                <h4>
+
+                    Monthly HR Meeting
+
+                </h4>
+
+                <p>
+
+                    Scheduled for Friday at 3:00 PM.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="announcement-item">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+
+                <h4>
+
+                    Security Reminder
+
+                </h4>
+
+                <p>
+
+                    Enable two-factor authentication for all admin accounts.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+     EMPLOYEE MANAGEMENT TABLE
+     Continues in Part 3
+=================================================== -->
+
+
+<!-- ===================================================
+     EMPLOYEE MANAGEMENT
+=================================================== -->
+
+<section
+    class="dashboard-card"
+    id="employees">
+
+    <div class="card-header">
+
+        <div>
+
+            <h2>
+
+                Employee Management
+
+            </h2>
+
+            <p>
+
+                View, search, edit and manage employee records.
+
+            </p>
+
+        </div>
+
+        <button
+            class="btn primary-btn"
+            id="addEmployee">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            Add Employee
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         SEARCH & FILTER
+    ========================================== -->
+
+    <div class="table-toolbar">
+
+        <div class="toolbar-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="employeeSearch"
+                placeholder="Search by Employee ID, Name or Email">
+
+        </div>
+
+        <div class="toolbar-filters">
+
+            <select id="departmentFilter">
+
+                <option value="">All Departments</option>
+                <option>Software Development</option>
+                <option>Web Development</option>
+                <option>Mobile Development</option>
+                <option>Cloud Computing</option>
+                <option>AI & ML</option>
+                <option>Cyber Security</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>Marketing</option>
+
+            </select>
+
+            <select id="statusFilter">
+
+                <option value="">All Status</option>
+                <option>Approved</option>
+                <option>Pending</option>
+                <option>Rejected</option>
+
+            </select>
+
+            <button
+                class="btn secondary-btn"
+                id="refreshEmployeeTable">
+
+                <i class="fa-solid fa-rotate-right"></i>
+
+                Refresh
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         EMPLOYEE TABLE
+    ========================================== -->
+
+    <div class="table-responsive">
+
+        <table
+            class="dashboard-table"
+            id="employeeTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+
+                    <th>Employee ID</th>
+
+                    <th>Name</th>
+
+                    <th>Email</th>
+
+                    <th>Department</th>
+
+                    <th>Mobile</th>
+
+                    <th>Status</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="employeeTableBody">
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>EMP000001</td>
+
+                    <td>Rahul Sharma</td>
+
+                    <td>rahul@email.com</td>
+
+                    <td>Software Development</td>
+
+                    <td>9876543210</td>
+
+                    <td>
+
+                        <span class="status approved">
+
+                            Approved
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button
+                            class="table-btn view-btn"
+                            title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button
+                            class="table-btn edit-btn"
+                            title="Edit">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                        </button>
+
+                        <button
+                            class="table-btn delete-btn"
+                            title="Delete">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>2</td>
+
+                    <td>EMP000002</td>
+
+                    <td>Priya Das</td>
+
+                    <td>priya@email.com</td>
+
+                    <td>Human Resources</td>
+
+                    <td>9123456789</td>
+
+                    <td>
+
+                        <span class="status pending">
+
+                            Pending
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button
+                            class="table-btn view-btn">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button
+                            class="table-btn edit-btn">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                        </button>
+
+                        <button
+                            class="table-btn delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>3</td>
+
+                    <td>EMP000003</td>
+
+                    <td>Amit Kumar</td>
+
+                    <td>amit@email.com</td>
+
+                    <td>Finance</td>
+
+                    <td>9012345678</td>
+
+                    <td>
+
+                        <span class="status rejected">
+
+                            Rejected
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button
+                            class="table-btn view-btn">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button
+                            class="table-btn edit-btn">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                        </button>
+
+                        <button
+                            class="table-btn delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         PAGINATION
+    ========================================== -->
+
+    <div class="table-footer">
+
+        <div>
+
+            Showing
+
+            <strong>
+
+                1-3
+
+            </strong>
+
+            of
+
+            <strong>
+
+                248
+
+            </strong>
+
+            Employees
+
+        </div>
+
+        <div class="pagination">
+
+            <button class="page-btn">
+
+                <i class="fa-solid fa-angle-left"></i>
+
+            </button>
+
+            <button class="page-btn active">
+
+                1
+
+            </button>
+
+            <button class="page-btn">
+
+                2
+
+            </button>
+
+            <button class="page-btn">
+
+                3
+
+            </button>
+
+            <button class="page-btn">
+
+                4
+
+            </button>
+
+            <button class="page-btn">
+
+                <i class="fa-solid fa-angle-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+     EMPLOYEE DETAILS MODAL
+     Continues in Part 4
+=================================================== -->
+
+<!-- ===================================================
+     EMPLOYEE DETAILS MODAL
+=================================================== -->
+
+<div
+    class="modal"
+    id="employeeModal">
+
+    <div class="modal-content large-modal">
+
+        <div class="modal-header">
+
+            <h2>
+
+                Employee Details
+
+            </h2>
+
+            <button
+                class="close-modal"
+                id="closeEmployeeModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <div class="employee-profile">
+
+                <div class="employee-avatar">
+
+                    <img
+                        src="https://via.placeholder.com/120"
+                        alt="Employee">
+
+                </div>
+
+                <div class="employee-basic-info">
+
+                    <h2 id="modalEmployeeName">
+
+                        Rahul Sharma
+
+                    </h2>
+
+                    <p>
+
+                        Employee ID :
+                        <strong id="modalEmployeeId">
+
+                            EMP000001
+
+                        </strong>
+
+                    </p>
+
+                    <p>
+
+                        Department :
+                        <strong id="modalDepartment">
+
+                            Software Development
+
+                        </strong>
+
+                    </p>
+
+                    <span class="status approved">
+
+                        Approved
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="details-grid">
+
+                <div>
+
+                    <h4>Email</h4>
+                    <p id="modalEmail">rahul@email.com</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Mobile</h4>
+                    <p id="modalMobile">9876543210</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Date of Birth</h4>
+                    <p id="modalDob">15 May 2000</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Gender</h4>
+                    <p id="modalGender">Male</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Qualification</h4>
+                    <p id="modalQualification">B.Tech</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Experience</h4>
+                    <p id="modalExperience">2 Years</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Joining Date</h4>
+                    <p id="modalJoiningDate">01 July 2026</p>
+
+                </div>
+
+                <div>
+
+                    <h4>Application Status</h4>
+                    <p id="modalStatus">Approved</p>
+
+                </div>
+
+            </div>
+
+            <div class="employee-address">
+
+                <h3>
+
+                    Address
+
+                </h3>
+
+                <p id="modalAddress">
+
+                    Kolkata, West Bengal, India
+
+                </p>
+
+            </div>
+
+            <div class="employee-skills">
+
+                <h3>
+
+                    Technical Skills
+
+                </h3>
+
+                <div class="skill-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                class="btn secondary-btn"
+                id="printEmployeeProfile">
+
+                <i class="fa-solid fa-print"></i>
+
+                Print
+
+            </button>
+
+            <button
+                class="btn primary-btn"
+                id="editEmployeeProfile">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit Employee
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================
+     APPLICATION REVIEW PANEL
+=================================================== -->
+
+<section
+    class="dashboard-card"
+    id="applications">
+
+    <div class="card-header">
+
+        <div>
+
+            <h2>
+
+                Pending Applications
+
+            </h2>
+
+            <p>
+
+                Review employee applications awaiting approval.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="table-responsive">
+
+        <table class="dashboard-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Application ID</th>
+                    <th>Applicant</th>
+                    <th>Department</th>
+                    <th>Applied On</th>
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>APP000021</td>
+                    <td>Ankit Roy</td>
+                    <td>Web Development</td>
+                    <td>28 Jul 2026</td>
+
+                    <td>
+
+                        <span class="status pending">
+
+                            Pending
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button class="table-btn approve-btn">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                        <button class="table-btn reject-btn">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                        <button class="table-btn view-btn">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>APP000022</td>
+                    <td>Sneha Paul</td>
+                    <td>Finance</td>
+                    <td>29 Jul 2026</td>
+
+                    <td>
+
+                        <span class="status pending">
+
+                            Pending
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button class="table-btn approve-btn">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                        <button class="table-btn reject-btn">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                        <button class="table-btn view-btn">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+     REPORTS & ANALYTICS
+     Continues in Part 5
+=================================================== -->
+
+<!-- ===================================================
+     REPORTS & ANALYTICS
+=================================================== -->
+
+<section
+    class="dashboard-card"
+    id="reports">
+
+    <div class="card-header">
+
+        <div>
+
+            <h2>
+
+                Reports & Analytics
+
+            </h2>
+
+            <p>
+
+                Recruitment statistics and employee insights.
+
+            </p>
+
+        </div>
+
+        <button
+            class="btn primary-btn"
+            id="downloadReports">
+
+            <i class="fa-solid fa-file-arrow-down"></i>
+
+            Download Reports
+
+        </button>
+
+    </div>
+
+    <div class="analytics-grid">
+
+        <div class="analytics-card">
+
+            <h3>
+
+                Recruitment Progress
+
+            </h3>
+
+            <div class="chart-placeholder">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <p>
+
+                    Monthly Recruitment Chart
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <h3>
+
+                Department Distribution
+
+            </h3>
+
+            <div class="chart-placeholder">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <p>
+
+                    Employee Distribution
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <h3>
+
+                Application Status
+
+            </h3>
+
+            <ul class="analytics-list">
+
+                <li>
+
+                    <span>Approved</span>
+
+                    <strong>186</strong>
+
+                </li>
+
+                <li>
+
+                    <span>Pending</span>
+
+                    <strong>14</strong>
+
+                </li>
+
+                <li>
+
+                    <span>Rejected</span>
+
+                    <strong>48</strong>
+
+                </li>
+
+                <li>
+
+                    <span>Total</span>
+
+                    <strong>248</strong>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     SYSTEM SETTINGS
+=================================================== -->
+
+<section
+    class="dashboard-card"
+    id="settings">
+
+    <div class="card-header">
+
+        <div>
+
+            <h2>
+
+                System Settings
+
+            </h2>
+
+            <p>
+
+                Configure administrator preferences.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="settings-grid">
+
+        <div class="setting-item">
+
+            <label>
+
+                Company Name
+
+            </label>
+
+            <input
+                type="text"
+                value="Nexora Technologies Pvt. Ltd.">
+
+        </div>
+
+        <div class="setting-item">
+
+            <label>
+
+                HR Contact Email
+
+            </label>
+
+            <input
+                type="email"
+                value="hr@nexora.com">
+
+        </div>
+
+        <div class="setting-item">
+
+            <label>
+
+                Support Phone
+
+            </label>
+
+            <input
+                type="text"
+                value="+91 9876543210">
+
+        </div>
+
+        <div class="setting-item">
+
+            <label>
+
+                Default Application Status
+
+            </label>
+
+            <select>
+
+                <option selected>
+
+                    Pending
+
+                </option>
+
+                <option>
+
+                    Approved
+
+                </option>
+
+                <option>
+
+                    Rejected
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="settings-actions">
+
+        <button
+            class="btn primary-btn">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            Save Settings
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     ADMIN PROFILE
+=================================================== -->
+
+<section
+    class="dashboard-card">
+
+    <div class="card-header">
+
+        <h2>
+
+            Administrator Profile
+
+        </h2>
+
+    </div>
+
+    <div class="admin-profile-card">
+
+        <div class="profile-image">
+
+            <img
+                src="https://via.placeholder.com/140"
+                alt="Administrator">
+
+        </div>
+
+        <div class="profile-details">
+
+            <h3>
+
+                System Administrator
+
+            </h3>
+
+            <p>
+
+                Administrator ID:
+                <strong>ADM0001</strong>
+
+            </p>
+
+            <p>
+
+                Department:
+                <strong>Human Resources</strong>
+
+            </p>
+
+            <p>
+
+                Email:
+                <strong>admin@nexora.com</strong>
+
+            </p>
+
+            <p>
+
+                Last Login:
+                <strong>30 July 2026, 09:15 AM</strong>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+     FOOTER & SCRIPTS
+     Continues in Part 6
+=================================================== -->
+
+<!-- ===================================================
+     DASHBOARD FOOTER
+=================================================== -->
+
+<footer class="dashboard-footer">
+
+    <div class="footer-left">
+
+        <p>
+
+            &copy; 2026 Nexora Technologies Pvt. Ltd.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+    <div class="footer-right">
+
+        <span>
+
+            Admin Dashboard Version 1.0
+
+        </span>
+
+    </div>
+
+</footer>
+
+</main>
+
+</div>
+
+
+
+<!-- ===================================================
+     LOADING OVERLAY
+=================================================== -->
+
+<div
+    id="loadingOverlay"
+    class="loading-overlay"
+    style="display:none;">
+
+    <div class="loader"></div>
+
+    <p>
+
+        Processing request...
+
+    </p>
+
+</div>
+
+
+
+<!-- ===================================================
+     TOAST NOTIFICATION
+=================================================== -->
+
+<div
+    id="toastNotification"
+    class="toast-notification">
+
+    <span id="toastMessage">
+
+        Notification
+
+    </span>
+
+</div>
+
+
+
+<!-- ===================================================
+     DELETE CONFIRMATION MODAL
+=================================================== -->
+
+<div
+    class="modal"
+    id="deleteConfirmationModal">
+
+    <div class="modal-content small-modal">
+
+        <div class="modal-header">
+
+            <h2>
+
+                Delete Employee
+
+            </h2>
+
+            <button
+                class="close-modal"
+                id="closeDeleteModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>
+
+                Are you sure you want to delete this employee record?
+
+            </p>
+
+            <p>
+
+                This action cannot be undone.
+
+            </p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                class="btn secondary-btn"
+                id="cancelDelete">
+
+                Cancel
+
+            </button>
+
+            <button
+                class="btn danger-btn"
+                id="confirmDelete">
+
+                <i class="fa-solid fa-trash"></i>
+
+                Delete
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================
+     LOGOUT CONFIRMATION MODAL
+=================================================== -->
+
+<div
+    class="modal"
+    id="logoutModal">
+
+    <div class="modal-content small-modal">
+
+        <div class="modal-header">
+
+            <h2>
+
+                Logout
+
+            </h2>
+
+            <button
+                class="close-modal"
+                id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>
+
+                Do you really want to log out from the
+                Administrator Dashboard?
+
+            </p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                class="btn secondary-btn"
+                id="cancelLogout">
+
+                Stay Logged In
+
+            </button>
+
+            <a
+                href="admin-login.html"
+                class="btn danger-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================
+     JAVASCRIPT
+=================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
